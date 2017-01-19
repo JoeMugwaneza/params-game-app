@@ -1,2 +1,0 @@
-class FunController < ApplicationController
-end
