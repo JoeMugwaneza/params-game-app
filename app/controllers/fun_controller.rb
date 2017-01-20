@@ -2,8 +2,8 @@ class FunController < ApplicationController
 	def gaming_action
 	  	@name = params[:name]
 	  	initial_letter= []
-	  	initials = @name.upcase.split("")
-	  	initial_letter = initials.first
+	  	initials = @name.split("")
+	  	initial_letter = initials.first.upcase
 	  	message = ""
 
 	  if initial_letter == "A"
