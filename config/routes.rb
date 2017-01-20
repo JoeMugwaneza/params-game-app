@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get '/gaming_action', to: "fun#gaming_action"
-  get '/joe', to: "fun#have_some_fun"
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/name', to: "fun#name"
+  get '/joseph', to: "fun#game"
+	get '/new_param/:welcome', to: "fun#new_param"
+
+	get '/mygame', to: "fun#url_segment_form"
+	post '/mygame_result', to: "fun#url_segment_form_result"
+
 end
